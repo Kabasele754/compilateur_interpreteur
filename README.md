@@ -50,3 +50,18 @@ compiler le second
 
 • On recommence une itération pour ajouter des fonctionnalités 
 au langage
+
+• Il est possible que la création d’un programme exécutable 
+requière plusieurs autres programmes qu’un compilateur 
+pour transformer le code source en programme
+
+# Qu’est-ce qu’un interpréteur ?
+
+• C’est un programme qui reçoit en entrée un texte écrit 
+dans un langage source (S), ainsi que les entrées 
+requises par le programme (E) et produit en sortie les 
+résultats du texte d’entrée (R)
+
+• L’interpréteur lit chacune des instructions indiquées dans 
+le texte d’entrée et exécute les instructions appropriées 
+sur la machine cible
