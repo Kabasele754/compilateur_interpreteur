@@ -80,3 +80,36 @@ données en entrée
 • L’interpréteur produit les résultats finaux
 
 # image
+
+• Les avantages d’un compilateur hybride sont
+
+• Grande portabilité du code
+
+• Habituellement, une meilleure gestion des erreurs
+
+• Les désavantages sont
+
+• Souvent une vitesse d’exécution plus lente
+
+• Les désavantages sont
+
+
+• Un compilateur produit habituellement du code plus 
+
+rapide qu’un interpréteur
+
+• Le code produit par un compilateur est adapté à une 
+machine en particulier. Le code est donc difficilement 
+portable
+
+• Souvent une vitesse d’exécution plus lente
+
+• L’interprète est habituellement écrit dans un langage de 
+haut niveau, il est donc plus portable.
+
+• L’écriture d’un interpréteur demande habituellement 
+moins de travail qu’un compilateur standard
+
+• L’interpréteur travaille directement avec la représentation 
+sémantique, ce qui améliore la sécurité et la gestion des 
+erreurs
