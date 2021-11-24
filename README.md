@@ -65,3 +65,18 @@ résultats du texte d’entrée (R)
 • L’interpréteur lit chacune des instructions indiquées dans 
 le texte d’entrée et exécute les instructions appropriées 
 sur la machine cible
+
+# image
+
+# Qu’est-ce qu’un compilateur hybride ?
+
+• C’est une approche qui combine le compilateur et 
+l’interpréteur
+
+• Le texte source est transformé en code intermédiaire (I) 
+qui peut être lu et exécuté par l’interpréteur à l’aide des 
+données en entrée
+
+• L’interpréteur produit les résultats finaux
+
+# image
