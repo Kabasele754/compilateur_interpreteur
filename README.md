@@ -1,23 +1,24 @@
-dans lesquels tout est objet).
+# Typologie des langages de programmation
 
-Dans ces langages, tous les objets font partie d'une même "classe" (au sens de la théorie des ensembles de Zermelo-Fraenkel), que l'on peut assimiler au type Object de Java. Chaque classe définit un sous-ensemble de ce type. Définir une classe B comme sous-classe de A revient à définir l'ensemble des objets de type B comme un sous-ensemble de l'ensemble des objets de type A.
+## I. Introduction
+Il existe des milliers de langages de programmation. On considère d'ailleurs que plus de 1500 langages sont utilisés à relativement large échelle de par le monde. Il existe de nombreuses raisons justifiant l'apparition de nouveaux langages, et le choix de tel ou tel langage pour répondre à un problème.
 
-Une fois ces concepts acquis, il devient logique de comprendre que si B hérite de A, alors une variable a de type A peut contenir une donnée de type B,mais qu'une variable b de type B ne peut a priori pas contenir une donnée de type A.
+Dans la suite de ce document, quelques grands critères permettant de comparer les langages de programmation sont présentés.
 
-Ainsi, le code suivant est correct :
+## II. Paradigmes fondamentaux du langage
+On appelle paradigme de programmation la façon dont on envisage l'exécution d'un programme. On distingue souvent 3 paradigmes principaux de programmation
 
-  //La classe B hérite de A
-  A a;
-  B b;
-  ...
-  a = b;
-Mais le code qui suit est erroné :
+Programmation impérative
+La programmation impérative est une programmation dans laquelle un programme est fait d'instructions dont l'exécution modifie l'état du programme. C'est le paradigme sous-jacent à la plupart des langages de programmation. Même si la plupart des langages impératifs sont des langages où les instructions sont exécutées séquentiellement, ce n'est nullement une obligation ; par exemple, dans un langage comme ADA, on peut spécifier que des instructions seront exécutées en parallèle. Les premiers langages de programmation étaient des langages impératifs. De nombreux langages récents sont également des langages impératifs.
 
-  //La classe B hérite de A
-  A a;
-  B b;
-  ...
-  b = a;
+Quelques exemples : C, Python, Java, Ada, Javascript
+
+Programmation fonctionnelle
+La programmation fonctionnelle est une programmation dans laquelle un programme est une composition de fonctions calculant un résultat à partir de données d'entrée. La théorie sous-jacente est celle du λ-calcul, introduite par Church en 1925. Le premier langage fonctionnel fut le Lisp (1958), qui eut un certain succès, notamment dans le domaine de l'IA. D'autres langages fonctionnels sont à citer :
+
+ML (1970), plus proche de la théorie de λ-calcul ;
+CAML (1985), déclinaison française de ML, autorisant la programmation impérative et objet ;
+Haskell(1990), une version plus moderne, très pure, de la notion de langage fonctionnel.
 
 
 # compilateur et  interpreteur
