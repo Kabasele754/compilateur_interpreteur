@@ -8,12 +8,12 @@ Dans la suite de ce document, quelques grands critères permettant de comparer l
 ## II. Paradigmes fondamentaux du langage
 On appelle paradigme de programmation la façon dont on envisage l'exécution d'un programme. On distingue souvent 3 paradigmes principaux de programmation
 
-Programmation impérative
+### Programmation impérative
 La programmation impérative est une programmation dans laquelle un programme est fait d'instructions dont l'exécution modifie l'état du programme. C'est le paradigme sous-jacent à la plupart des langages de programmation. Même si la plupart des langages impératifs sont des langages où les instructions sont exécutées séquentiellement, ce n'est nullement une obligation ; par exemple, dans un langage comme ADA, on peut spécifier que des instructions seront exécutées en parallèle. Les premiers langages de programmation étaient des langages impératifs. De nombreux langages récents sont également des langages impératifs.
 
 Quelques exemples : C, Python, Java, Ada, Javascript
 
-Programmation fonctionnelle
+### Programmation fonctionnelle
 La programmation fonctionnelle est une programmation dans laquelle un programme est une composition de fonctions calculant un résultat à partir de données d'entrée. La théorie sous-jacente est celle du λ-calcul, introduite par Church en 1925. Le premier langage fonctionnel fut le Lisp (1958), qui eut un certain succès, notamment dans le domaine de l'IA. D'autres langages fonctionnels sont à citer :
 
 ML (1970), plus proche de la théorie de λ-calcul ;
@@ -52,7 +52,7 @@ La programmation impérative est une programmation dans laquelle un programme es
 
 Quelques exemples : C, Python, Java, Ada, Javascript
 
-Programmation fonctionnelle
+### Programmation fonctionnelle
 La programmation fonctionnelle est une programmation dans laquelle un programme est une composition de fonctions calculant un résultat à partir de données d'entrée. La théorie sous-jacente est celle du λ-calcul, introduite par Church en 1925. Le premier langage fonctionnel fut le Lisp (1958), qui eut un certain succès, notamment dans le domaine de l'IA. D'autres langages fonctionnels sont à citer :
 
 ML (1970), plus proche de la théorie de λ-calcul ;
@@ -117,17 +117,54 @@ conversion(Entier,s(P)):- conversion(EntierP, P), Entier is EntierP+1.
 ## III. Paradigmes secondaires
 Certaines autres caractéristiques des langages de programmation sont quelques fois considérés comme des paradigmes. En voici quelques-uns :
 
-Programmation orientée objets
+### Programmation orientée objets
 Les langages orientés objets sont des langages dans lesquels les structures de données définissent aussi les traitements qui s'y rattachent. Si la plupart des langages orientés objets sont des langages de classe, certains reposent sur d'autres modèles, comme Javascript, qui est un langage à prototype.
 
 La plupart des langages orientés objets sont des langages impératifs, mais OCAML (extension de CAML), par exemple, est un langage fonctionnel orienté objets
 
-Programmation événementielle
+### Programmation événementielle
 La programmation événementielle est un style de programmation qui consiste à déclencher des traitements lorsque des événements (externes ou générés par d'autres parties du programme) surviennent. C'est un style de programmation souvent utilisé dans le développement d'interfaces graphiques (entre autres dans le développement de documents Web). C'est aussi la base du fonctionnement d'un langage comme Scratch par exemple.
 
-Programmation orientée aspect
+### Programmation orientée aspect
 La programmation orientée aspect consiste à spécifier isolément certains aspects transverses au code métier afin d'éviter de le disséminer dans tous les fichiers source. Du coup, un "tisseur" d'aspects (programme qui ré-introduit ensuite les aspects aux bons endroits dans le code source avant compilation ou exécution) est nécessaire.
 
+IV. Classification selon le code exécuté
+Selon les langages, le code source peut être interprété directement lors de l'exécution, ou bien ce peut être une traduction de ce code source dans un autre langage qui est exécutée.
+
+Langage interprété
+Un langage interprété est un langage dont le code exécuté est le code source. Comme celui-ci n'est en général pas compréhensible par la machine, un interprète doit jouer le rôle de traducteur à la volée pour chaque exécution du programme. Un langage interprété est en général d'utilisation aisée, mais est lent à l'exécution, gourmand en ressources, et laisse souvent subsister des bugs.
+
+Quelques exemples :
+
+Python
+
+Javascript
+
+PHP
+
+Lisp
+
+### Langage compilé
+Un langage compilé est un langage dont le code source est traduit une fois pour toute dans le langage du micro-processeur (langage machine) par un programme appelé compilateur. Le fichier ainsi produit est souvent appelé "code objet". L'utilisation d'un langage compilé est a priori moins facile que celle d'un langage interprété, puisque la phase de compilation est indispensable entre une modification du programme et son exécution. Il y a cependant 2 avantages essentiels par rapport aux langages interprétés :
+
+le compilateur doit effectuer une analyse lexicale et syntaxique de tout le code source avant la compilation, ce qui permet d'enlever un certain nombre de bugs ;
+l'exécution est beaucoup plus rapide.
+Quelques exemples :
+
+
+Quelques exemples :
+
+C
+
+Pascal
+
+Eiffel
+### Langage semi-compilé
+Un langage semi-compilé est un langage dont le code source doit être traduit par un compilateur dans un code intermédiaire, proche du langage machine, appelé souvent byte code. Pour l'exécution, un interprèteur doit exécuter ce code intermédiaire.
+
+Le code intermédiaire étant très proche d'un langage machine, son interprétation est très rapide. L'exécution est donc bien plus rapide que celle d'un langage interprété. Par ailleurs, le code intermédiaire est générique, donc la compilation ne doit pas être faite pour chaque architecture cible.
+
+La notion de bytecode est apparue en 1972. Le langage qui a commencé à la populariser est sans nul doute le langage Java.
 # compilateur et  interpreteur
 
 # Introduction
