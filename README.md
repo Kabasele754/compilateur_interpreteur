@@ -162,6 +162,24 @@ Eiffel
 ### Langage semi-compilé
 Un langage semi-compilé est un langage dont le code source doit être traduit par un compilateur dans un code intermédiaire, proche du langage machine, appelé souvent byte code. Pour l'exécution, un interprèteur doit exécuter ce code intermédiaire.
 
+### Compilation Juste à temps (JIT)
+De plus en plus de langages interprétés ou semi-compilés proposent des compilations "juste à temps" : à l'exécution, si l'interprèteur détecte qu'un morceau du code est beaucoup utilisé, il peut dynamiquement compilé ce morceau là afin que les exécutions ultérieures soient beaucoup plus rapides. Cette pratique est notamment mise en oeuvre dans des langages comme Python ou Java.
+
+## V. Niveau du langage
+Il est également possible de classé les langages selon leur "niveau" : plus un langage est de haut niveau, plus il est éloigné de l'architecture matériel.
+
+### Langage de bas niveau
+
+Font partie de cette catégorie les assembleurs : ce sont des langages qui permettent juste de simplifier l'utilisation du langage machine : on utilise des mots-clés pour les instructions plutôt qu'un code hexadécimal, et on peut utiliser des étiquettes pour éviter des calculs d'adresse
+
+### Langage intermédaire
+On considère un langage comme un langage intermédiaire si celui-ci présente des structures de contrôle de plutôt haut niveau mais que malgré tout, la représentation en machine des données et du programme doivent être relativement bien connues pour pouvoir maîtriser le langage.
+
+Le langage C est un exemple typique de langage intermédiaire.
+
+### Langage de haut niveau
+Les langages de haut niveau constitue la majeure partie des langages de programmation. Python, Java, Javascript, etc. font partie de cette catégorie.
+
 Le code intermédiaire étant très proche d'un langage machine, son interprétation est très rapide. L'exécution est donc bien plus rapide que celle d'un langage interprété. Par ailleurs, le code intermédiaire est générique, donc la compilation ne doit pas être faite pour chaque architecture cible.
 
 La notion de bytecode est apparue en 1972. Le langage qui a commencé à la populariser est sans nul doute le langage Java.
