@@ -1,3 +1,25 @@
+dans lesquels tout est objet).
+
+Dans ces langages, tous les objets font partie d'une même "classe" (au sens de la théorie des ensembles de Zermelo-Fraenkel), que l'on peut assimiler au type Object de Java. Chaque classe définit un sous-ensemble de ce type. Définir une classe B comme sous-classe de A revient à définir l'ensemble des objets de type B comme un sous-ensemble de l'ensemble des objets de type A.
+
+Une fois ces concepts acquis, il devient logique de comprendre que si B hérite de A, alors une variable a de type A peut contenir une donnée de type B,mais qu'une variable b de type B ne peut a priori pas contenir une donnée de type A.
+
+Ainsi, le code suivant est correct :
+
+  //La classe B hérite de A
+  A a;
+  B b;
+  ...
+  a = b;
+Mais le code qui suit est erroné :
+
+  //La classe B hérite de A
+  A a;
+  B b;
+  ...
+  b = a;
+
+
 # compilateur et  interpreteur
 
 # Introduction
