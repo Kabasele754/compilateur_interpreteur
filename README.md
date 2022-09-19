@@ -186,6 +186,13 @@ La notion de bytecode est apparue en 1972. Le langage qui a commencé à la popu
 
 ### Langage de 4ème génération
 Les langages de quatrième génération sont des langages proposés par une application pour permettre d'automatiser des traitements de l'application. VBA en est un exemple.
+## VI. Langage et typage
+### A. Du typage strict au typage faible
+#### 1. Les différentes catégories de typage
+Un langage de programmation manipule des données. Ces données sont des valeurs d'un certain type. D'une façon plus formelle, on peut voir un type comme un ensemble et une valeur comme un élément de cette ensemble. Ainsi, quand un programme manipule la donnée "3.14", il s'agit d'un élément de l'ensemble des réels.
+
+Dans un langage à typage strict, les types sont en fait des "classes" au sens de la théorie des ensembles de Zermelo-Fraenkel (et non au sens des langages à base de classes), ce qui signifie qu'ils sont disjoints et "non mélangeables" (ceci permet de rendre la théorie des ensembles consistante, en évitant par exemple le paradoxe de Russel). Par ailleurs, toute variable est aussi caractérisée par un type : une variable de type t ne peut contenir que des données de type t.
+
 # compilateur et  interpreteur
 
 # Introduction
