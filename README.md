@@ -183,6 +183,9 @@ Les langages de haut niveau constitue la majeure partie des langages de programm
 Le code intermédiaire étant très proche d'un langage machine, son interprétation est très rapide. L'exécution est donc bien plus rapide que celle d'un langage interprété. Par ailleurs, le code intermédiaire est générique, donc la compilation ne doit pas être faite pour chaque architecture cible.
 
 La notion de bytecode est apparue en 1972. Le langage qui a commencé à la populariser est sans nul doute le langage Java.
+
+### Langage de 4ème génération
+Les langages de quatrième génération sont des langages proposés par une application pour permettre d'automatiser des traitements de l'application. VBA en est un exemple.
 # compilateur et  interpreteur
 
 # Introduction
